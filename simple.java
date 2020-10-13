@@ -4,7 +4,7 @@ import java.util.Stack;
 import java.util.Vector;
 
 public class simple {
-	public static double calculate(Vector<String> expression) {
+	public static String calculate(Vector<String> expression) {
 		Stack<Double> numStack = new Stack<>();
 		Stack<Character> operatorStack = new Stack<>();
 		for (int i = 0; i < expression.size(); i++) {
@@ -47,8 +47,22 @@ public class simple {
 		while (!operatorStack.empty())
 			
 			operate(numStack, operatorStack);
-
-		return numStack.pop();
+		
+		double rst ;
+		rst = numStack.pop();
+		double ze = Math.cos(Math.PI/2);
+		if(rst == ze) {
+			rst = 0;
+		}
+		rst = rst * 1000000.0;
+		rst = Math.round(rst);
+		rst = rst / 1000000.0;
+		String r = String.valueOf(rst);
+		
+		if (r.length() >= 9){
+			return  r.substring(0, 8);
+		}
+		return  r;
 	}
 	
 	public static void operate(Stack<Double> numStack, Stack<Character> operatorStack) {
@@ -67,9 +81,9 @@ public class simple {
 		else if (op == '-')
 			numStack.push(op2 - op1);
 		else if (op == '/')
-			numStack.push(op2 / op1);
+			numStack.push((op2*10000.0) / (op1*10000.0));
 		else if (op == '*')
-			numStack.push(op2 * op1);
+			numStack.push((op2*10000.0) * (op1*10000.0) / 100000000.0);
 		else if(op == 'm')
 			numStack.push(Math.pow(op2, op1));
 		else if(op == 's')
@@ -79,7 +93,7 @@ public class simple {
 		else if(op == 'l')
 			numStack.push(Math.log(op1));
 		else if(op == 'q')
-			numStack.push(Math.sqrt(op1));
+			numStack.push(Math.sqrt((op1*10000))/100);
 		else {
 
 		}
@@ -87,11 +101,9 @@ public class simple {
 	
 	public static void main(String[] args) {
 		Vector<String> t = new Vector<String>();
-		t.add("(");t.add("9");t.add("+");t.add("7");t.add(")");t.add("*");t.add("5");t.add("/");t.add("6");t.add("+");
-		t.add("s");t.add("2");t.add("+");t.add("c");t.add("(");t.add("p");t.add("/");t.add("2");t.add(")");t.add("-");
-		t.add("2");t.add("m");t.add("2");t.add("+");t.add("q");t.add("4");t.add("+");t.add("l");t.add("5");
-		double rst = calculate(t);
-		System.out.println(rst);
+		t.add("0.3");t.add("m");t.add("9");
+		String rst = calculate(t);
+		System.out.println(Math.cos(Math.PI/2));
 	}
 	
 }
