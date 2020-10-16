@@ -64,9 +64,10 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("^(");
                 temp.append("m(");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.getChars(););
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
                 }
-                TvCalculator.setText(result);
             }
         });
         BtnSqr.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +75,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("√(");
                 temp.append("q(");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnSin.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +87,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("sin(");
                 temp.append("s(");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnCos.setOnClickListener(new View.OnClickListener() {
@@ -90,7 +99,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("cos(");
                 temp.append("c(");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnBack.setOnClickListener(new View.OnClickListener() {
@@ -110,7 +123,11 @@ public class CalculatorActivity extends AppCompatActivity {
                     result.delete(0, result.length());
                     temp.delete(0, temp.length());
                 }
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnLeftBrac.setOnClickListener(new View.OnClickListener() {
@@ -118,7 +135,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("(");
                 temp.append("(");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnRightBrac.setOnClickListener(new View.OnClickListener() {
@@ -126,7 +147,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append(")");
                 temp.append(")");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnPlus.setOnClickListener(new View.OnClickListener() {
@@ -134,7 +159,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("+");
                 temp.append("+");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn1.setOnClickListener(new View.OnClickListener() {
@@ -142,7 +171,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("1");
                 temp.append("1");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn2.setOnClickListener(new View.OnClickListener() {
@@ -150,7 +183,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("2");
                 temp.append("2");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn3.setOnClickListener(new View.OnClickListener() {
@@ -158,7 +195,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("3");
                 temp.append("3");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnMinus.setOnClickListener(new View.OnClickListener() {
@@ -166,7 +207,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("-");
                 temp.append("-");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn4.setOnClickListener(new View.OnClickListener() {
@@ -174,7 +219,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("4");
                 temp.append("4");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn5.setOnClickListener(new View.OnClickListener() {
@@ -182,7 +231,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("5");
                 temp.append("5");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn6.setOnClickListener(new View.OnClickListener() {
@@ -190,7 +243,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("6");
                 temp.append("6");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnMult.setOnClickListener(new View.OnClickListener() {
@@ -198,7 +255,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("×");
                 temp.append("*");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn7.setOnClickListener(new View.OnClickListener() {
@@ -206,7 +267,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("7");
                 temp.append("7");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn8.setOnClickListener(new View.OnClickListener() {
@@ -214,7 +279,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("8");
                 temp.append("8");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn9.setOnClickListener(new View.OnClickListener() {
@@ -222,7 +291,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("9");
                 temp.append("9");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnDiv.setOnClickListener(new View.OnClickListener() {
@@ -230,7 +303,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("÷");
                 temp.append("/");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnZeroZero.setOnClickListener(new View.OnClickListener() {
@@ -238,7 +315,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("π");
                 temp.append("p");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         Btn0.setOnClickListener(new View.OnClickListener() {
@@ -246,7 +327,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append("0");
                 temp.append("0");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnDot.setOnClickListener(new View.OnClickListener() {
@@ -254,7 +339,11 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 result.append(".");
                 temp.append(".");
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
             }
         });
         BtnEqual.setOnClickListener(new View.OnClickListener() {
@@ -280,7 +369,11 @@ public class CalculatorActivity extends AppCompatActivity {
                 final String TAG = "MainActivity";
                 Log.d(TAG, expression.toString());
                 result.append(Simple.calculate(expression));
-                TvCalculator.setText(result);
+                if(result.length() > 10){
+                    TvCalculator.setText(result.toString().substring(0, 10));
+                }else{
+                    TvCalculator.setText(result);
+                }
                 result.delete(0, result.length());
                 temp.delete(0, temp.length());
             }
