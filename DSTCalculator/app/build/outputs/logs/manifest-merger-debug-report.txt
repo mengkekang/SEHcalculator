@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:2:1-28:12
 	xmlns:android
 		ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -14,7 +14,7 @@ ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xm
 		INJECTED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml
 		INJECTED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GitHub\SEHcalculator\DSTCalculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] D:\GitHub\SEHcalculator\DSTCalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.0] D:\GitHub\SEHcalculator\DSTCalculator\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:22:5-20
@@ -58,6 +58,18 @@ activity#com.example.lywva.dstcalculator.CalculatorActivity
 ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:22:9-55
 	android:name
 		ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:22:19-53
+activity#com.example.lywva.dstcalculator.FinFuncActivity
+ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:23:9-52
+	android:name
+		ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:23:19-50
+activity#com.example.lywva.dstcalculator.CapmActivity
+ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:24:9-49
+	android:name
+		ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:24:19-47
+activity#com.example.lywva.dstcalculator.AptActivity
+ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:25:9-48
+	android:name
+		ADDED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml:25:19-46
 uses-sdk
 INJECTED from D:\GitHub\SEHcalculator\DSTCalculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.0] D:\GitHub\SEHcalculator\DSTCalculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43

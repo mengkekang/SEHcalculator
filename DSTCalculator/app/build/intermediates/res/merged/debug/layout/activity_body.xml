@@ -6,46 +6,41 @@
     <Button
         android:id="@+id/btn_calculator"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="科学计算器"
-        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/btn_distribution"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="分布计算"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:textSize="30sp" />
+        android:textSize="40sp"
+        android:background="#00000000"/>
 
     <Button
         android:id="@+id/btn_finfunc"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="金融函数"
-        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:textSize="30sp" />
+        android:textSize="40sp"
+        android:background="#00000000"/>
 
     <Button
         android:id="@+id/btn_finexp"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="金融指数"
-        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:textSize="30sp" />
+        android:textSize="40sp"
+        android:background="#00000000"/>
 
     <Button
         android:id="@+id/btn_gpa"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="绩点计算"
-        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:textSize="30sp" />
+        android:textSize="40sp"
+        android:background="#00000000"/>
 
 </LinearLayout><!-- From: file:/D:/GitHub/SEHcalculator/DSTCalculator/app/src/main/res/layout/activity_body.xml -->

@@ -8,31 +8,31 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by lywva on 2020/10/7.
+ * Created by lywva on 2020/10/16.
  */
-public class BodyActivity extends AppCompatActivity {
+public class FinFuncActivity extends AppCompatActivity {
 
-    Button BtnCalculator, BtnFinFunc;
+    Button BtnCapm, BtnApt;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_body);
-        BtnCalculator = (Button) findViewById(R.id.btn_calculator);
-        BtnCalculator.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_finfunc);
+        BtnCapm = (Button) findViewById(R.id.btn_capm);
+        BtnCapm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(BodyActivity.this, CalculatorActivity.class);
+                intent.setClass(FinFuncActivity.this, CapmActivity.class);
                 startActivity(intent);
             }
         });
-        BtnFinFunc = (Button) findViewById(R.id.btn_finfunc);
-        BtnFinFunc.setOnClickListener(new View.OnClickListener() {
+        BtnApt = (Button) findViewById(R.id.btn_apt);
+        BtnApt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(BodyActivity.this, FinFuncActivity.class);
+                intent.setClass(FinFuncActivity.this, AptActivity.class);
                 startActivity(intent);
             }
         });

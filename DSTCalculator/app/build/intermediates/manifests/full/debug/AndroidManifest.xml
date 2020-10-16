@@ -26,6 +26,9 @@
         </activity>
         <activity android:name="com.example.lywva.dstcalculator.BodyActivity" />
         <activity android:name="com.example.lywva.dstcalculator.CalculatorActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.FinFuncActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.CapmActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.AptActivity" />
     </application>
 
 </manifest>

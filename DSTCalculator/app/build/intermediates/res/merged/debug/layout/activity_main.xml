@@ -14,20 +14,22 @@
         <Button
             android:id="@+id/btn_body"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="美丽的皮囊"
-            android:layout_marginTop="150dp"
             android:gravity="center"
-            android:textSize="30sp" />
+            android:textSize="45sp"
+            android:background="#00000000"/>
 
         <Button
             android:id="@+id/btn_soul"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="有趣的灵魂"
-            android:layout_marginTop="70dp"
             android:gravity="center"
-            android:textSize="30sp" />
+            android:textSize="45sp"
+            android:background="#00000000"/>
 
     </LinearLayout>
 

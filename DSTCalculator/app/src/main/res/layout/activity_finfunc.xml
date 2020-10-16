@@ -3,4 +3,22 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/btn_capm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="CAPM定价公式"
+        android:textSize="45sp"
+        android:background="#00000000"/>
+
+    <Button
+        android:id="@+id/btn_apt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="APT定价公式"
+        android:textSize="45sp"
+        android:background="#00000000"/>
+
 </LinearLayout>

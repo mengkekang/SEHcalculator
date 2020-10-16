@@ -64,7 +64,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("^(");
                 temp.append("m(");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -76,7 +76,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("√(");
                 temp.append("q(");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -88,7 +88,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("sin(");
                 temp.append("s(");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -100,7 +100,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("cos(");
                 temp.append("c(");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -124,7 +124,7 @@ public class CalculatorActivity extends AppCompatActivity {
                     temp.delete(0, temp.length());
                 }
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -136,7 +136,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("(");
                 temp.append("(");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -148,7 +148,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append(")");
                 temp.append(")");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -160,7 +160,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("+");
                 temp.append("+");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -172,7 +172,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("1");
                 temp.append("1");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -184,7 +184,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("2");
                 temp.append("2");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -196,7 +196,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("3");
                 temp.append("3");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -208,7 +208,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("-");
                 temp.append("-");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -220,7 +220,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("4");
                 temp.append("4");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -232,7 +232,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("5");
                 temp.append("5");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -244,7 +244,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("6");
                 temp.append("6");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -256,7 +256,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("×");
                 temp.append("*");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -268,7 +268,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("7");
                 temp.append("7");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -280,7 +280,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("8");
                 temp.append("8");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -292,7 +292,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("9");
                 temp.append("9");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -304,7 +304,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("÷");
                 temp.append("/");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -316,7 +316,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("π");
                 temp.append("p");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -328,7 +328,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append("0");
                 temp.append("0");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }
@@ -340,7 +340,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 result.append(".");
                 temp.append(".");
                 if(result.length() > 10){
-                    TvCalculator.setText(result.toString().substring(0, 10));
+                    TvCalculator.setText(result.toString().substring(result.length()-10, result.length()));
                 }else{
                     TvCalculator.setText(result);
                 }

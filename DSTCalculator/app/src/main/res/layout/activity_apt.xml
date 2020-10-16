@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_apt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_apt1"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:hint="请输入n:"
+            android:textSize="30sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_apt2"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_apt_calc"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="录入"
+            android:background="#00000000"
+            android:textSize="45sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
