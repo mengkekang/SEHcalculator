@@ -40,7 +40,7 @@ public class CapmActivity extends AppCompatActivity {
                 String r_f = EtCapmRf.getText().toString();
                 String R_m = EtCapmRm.getText().toString();
                 String beta = EtCapmBeta.getText().toString();
-                if(r_f == "" || R_m == "" || beta == "") {
+                if(r_f.equals("") || R_m.equals("") || beta.equals("")) {
                     Toast.makeText(CapmActivity.this, "need input", Toast.LENGTH_SHORT).show();
                 }else {
                     TvCapm.setText(Html.fromHtml("R<sub>i</sub>")+" = "+Finance.CAPM(r_f, R_m, beta));

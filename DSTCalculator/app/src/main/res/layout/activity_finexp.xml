@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_sharpe_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Sharpe ratio"
+        android:textSize="35sp"
+        android:background="#00000000"/>
+
+    <Button
+        android:id="@+id/btn_treynor_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Treynor ratio"
+        android:textSize="35sp"
+        android:background="#00000000"/>
+
+    <Button
+        android:id="@+id/btn_information_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Information ratio"
+        android:textSize="35sp"
+        android:background="#00000000"/>
+
+    <Button
+        android:id="@+id/btn_jensen_measure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Jensen measure"
+        android:textSize="35sp"
+        android:background="#00000000"/>
+
+</LinearLayout>

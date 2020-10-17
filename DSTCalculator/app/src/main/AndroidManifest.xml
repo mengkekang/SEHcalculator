@@ -23,6 +23,12 @@
         <activity android:name=".FinFuncActivity"/>
         <activity android:name=".CapmActivity"/>
         <activity android:name=".AptActivity"/>
+        <activity android:name=".FinExpActivity" />
+        <activity android:name=".SharpeRatioActivity" />
+        <activity android:name=".TreynorRatioActivity"/>
+        <activity android:name=".InformationRatioActivity"/>
+        <activity android:name=".JensenMeasureActivity"/>
+        <activity android:name=".GpaActivity"/>
     </application>
 
 </manifest>

@@ -29,6 +29,12 @@
         <activity android:name="com.example.lywva.dstcalculator.FinFuncActivity" />
         <activity android:name="com.example.lywva.dstcalculator.CapmActivity" />
         <activity android:name="com.example.lywva.dstcalculator.AptActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.FinExpActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.SharpeRatioActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.TreynorRatioActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.InformationRatioActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.JensenMeasureActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.GpaActivity" />
     </application>
 
 </manifest>

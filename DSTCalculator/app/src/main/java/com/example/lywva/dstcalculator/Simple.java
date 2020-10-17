@@ -53,6 +53,7 @@ public class Simple {
 
         double rst ;
         rst = numStack.pop();
+        if(rst >= 1.2E16) return String.valueOf((1.0/0.0));
         double ze = Math.cos(Math.PI/2);
         if(rst == ze) {
             rst = 0;
@@ -83,8 +84,10 @@ public class Simple {
             numStack.push(op2 + op1);
         else if (op == '-')
             numStack.push(op2 - op1);
-        else if (op == '/')
-            numStack.push((op2*10000.0) / (op1*10000.0));
+        else if (op == '/') {
+            if(op1 != 0) numStack.push((op2*10000.0) / (op1*10000.0));
+            else numStack.push(op2/op1);
+        }
         else if (op == '*')
             numStack.push((op2*10000.0) * (op1*10000.0) / 100000000.0);
         else if(op == 'm')
@@ -104,9 +107,9 @@ public class Simple {
 
     /*public static void main(String[] args) {
         Vector<String> t = new Vector<String>();
-        t.add("0.3");t.add("m");t.add("9");
+        t.add("1");t.add("/");t.add("0");
         String rst = calculate(t);
-        System.out.println(Math.cos(Math.PI/2));
+        System.out.println(rst);
     }*/
 
 }

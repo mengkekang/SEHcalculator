@@ -54,6 +54,7 @@ public class AptActivity extends AppCompatActivity {
                         i++;
                         EtApt1.setHint(Html.fromHtml("请输入β<sub>"+String.valueOf(i)+"</sub>:"));
                         EtApt2.setHint(Html.fromHtml("请输入r<sub>"+String.valueOf(i)+"</sub>:"));
+                        if(n == 1) BtnAptCalc.setText("计算");
                     }
                 }else{
                     if(i < n-1){

@@ -8,49 +8,49 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by lywva on 2020/10/7.
+ * Created by lywva on 2020/10/17.
  */
-public class BodyActivity extends AppCompatActivity {
+public class FinExpActivity extends AppCompatActivity {
 
-    Button BtnCalculator, BtnFinFunc, BtnFinExp, BtnGpa;
+    Button BtnSharpe, BtnTreynor, BtnInfo, BtnJen;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_body);
-        BtnCalculator = (Button) findViewById(R.id.btn_calculator);
-        BtnCalculator.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_finexp);
+        BtnSharpe = (Button) findViewById(R.id.btn_sharpe_ratio);
+        BtnTreynor = (Button) findViewById(R.id.btn_treynor_ratio);
+        BtnInfo = (Button) findViewById(R.id.btn_information_ratio);
+        BtnJen = (Button) findViewById(R.id.btn_jensen_measure);
+        BtnSharpe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(BodyActivity.this, CalculatorActivity.class);
+                intent.setClass(FinExpActivity.this, SharpeRatioActivity.class);
                 startActivity(intent);
             }
         });
-        BtnFinFunc = (Button) findViewById(R.id.btn_finfunc);
-        BtnFinFunc.setOnClickListener(new View.OnClickListener() {
+        BtnTreynor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(BodyActivity.this, FinFuncActivity.class);
+                intent.setClass(FinExpActivity.this, TreynorRatioActivity.class);
                 startActivity(intent);
             }
         });
-        BtnFinExp = (Button) findViewById(R.id.btn_finexp);
-        BtnFinExp.setOnClickListener(new View.OnClickListener() {
+        BtnInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(BodyActivity.this, FinExpActivity.class);
+                intent.setClass(FinExpActivity.this, InformationRatioActivity.class);
                 startActivity(intent);
             }
         });
-        BtnGpa = (Button) findViewById(R.id.btn_gpa);
-        BtnGpa.setOnClickListener(new View.OnClickListener() {
+        BtnJen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(BodyActivity.this, GpaActivity.class);
+                intent.setClass(FinExpActivity.this, JensenMeasureActivity.class);
                 startActivity(intent);
             }
         });
