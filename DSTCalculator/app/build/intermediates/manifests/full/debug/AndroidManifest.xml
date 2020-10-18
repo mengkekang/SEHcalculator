@@ -35,6 +35,7 @@
         <activity android:name="com.example.lywva.dstcalculator.InformationRatioActivity" />
         <activity android:name="com.example.lywva.dstcalculator.JensenMeasureActivity" />
         <activity android:name="com.example.lywva.dstcalculator.GpaActivity" />
+        <activity android:name="com.example.lywva.dstcalculator.SoulActivity" />
     </application>
 
 </manifest>
