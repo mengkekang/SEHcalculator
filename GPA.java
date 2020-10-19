@@ -1,6 +1,7 @@
 package GPA;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Vector;
 
 public class GPA {
@@ -19,7 +20,7 @@ public static String gpa(int n, Vector<Integer> grade, Vector<BigDecimal> credit
 		BigDecimal c =  new BigDecimal(0);
 		for(int i=0;i<n;i++) {
 			c = credit.elementAt(i);
-			c = c.divide(S, 2, BigDecimal.ROUND_HALF_DOWN);
+			c = c.divide(S, 2, RoundingMode.HALF_UP);
 			r = r.add(c.multiply(p.elementAt(i)));
 		}
 

@@ -2,6 +2,8 @@ package simple_calculate;
 
 import java.util.Stack;
 import java.util.Vector;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class simple {
 	public static String calculate(Vector<String> expression) {
@@ -50,20 +52,15 @@ public class simple {
 		
 		double rst ;
 		rst = numStack.pop();
-		if(rst == (1.0/0.0)) return String.valueOf(rst);
+		if(rst >= 1.2E16) return String.valueOf((1.0/0.0));
 		double ze = Math.cos(Math.PI/2);
 		if(rst == ze) {
 			rst = 0;
 		}
-		rst = rst * 1000000.0;
-		rst = Math.round(rst);
-		rst = rst / 1000000.0;
-		String r = String.valueOf(rst);
 		
-		if (r.length() >= 9){
-			return  r.substring(0, 8);
-		}
-		return  r;
+		BigDecimal rst_round = new BigDecimal(rst);
+		rst_round= rst_round.setScale(2, RoundingMode.HALF_UP);
+		return rst_round.toString();
 	}
 	
 	public static void operate(Stack<Double> numStack, Stack<Character> operatorStack) {
@@ -77,16 +74,19 @@ public class simple {
 			op1 = numStack.pop();
 		}
 		
+		BigDecimal o1 = new BigDecimal(op1);
+		BigDecimal o2 = new BigDecimal(op2);
+		
 		if (op == '+')
-			numStack.push(op2 + op1);
+			numStack.push(o1.add(o2).doubleValue());
 		else if (op == '-')
-			numStack.push(op2 - op1);
+			numStack.push(o2.subtract(o1).doubleValue());
 		else if (op == '/') {
-			if(op1 != 0) numStack.push((op2*10000.0) / (op1*10000.0));
+			if(op1 != 0) numStack.push(o2.divide(o1).doubleValue());
 			else numStack.push(op2/op1);
 		}
 		else if (op == '*')
-			numStack.push((op2*10000.0) * (op1*10000.0) / 100000000.0);
+			numStack.push(o1.multiply(o2).doubleValue());
 		else if(op == 'm')
 			numStack.push(Math.pow(op2, op1));
 		else if(op == 's')
@@ -96,7 +96,7 @@ public class simple {
 		else if(op == 'l')
 			numStack.push(Math.log(op1));
 		else if(op == 'q')
-			numStack.push(Math.sqrt((op1*10000))/100);
+			numStack.push(Math.sqrt(op1));
 		else {
 
 		}
@@ -104,7 +104,9 @@ public class simple {
 	
 	public static void main(String[] args) {
 		Vector<String> t = new Vector<String>();
-		t.add("1");t.add("/");t.add("0");
+		//t.add("s");t.add("(");t.add("p");t.add("/");t.add("2");t.add(")");t.add("/");
+		//t.add("c");t.add("(");t.add("p");t.add("/");t.add("2");t.add(")");
+		t.add("0.3");t.add("*");t.add("3");
 		String rst = calculate(t);
 		System.out.println(rst);
 	}

@@ -2,6 +2,7 @@ package finance;
 
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Vector;
 
 public class finance {
@@ -45,7 +46,7 @@ public static String Sharpe_ratio(String r_f, String R_p, String v_p) {
 		BigDecimal v = new BigDecimal(v_p);
 		
 		String rst;
-		rst = (((Rp.subtract(rf)).divide(v)).toString());
+		rst = (((Rp.subtract(rf)).divide(v, 2, RoundingMode.HALF_UP)).toString());
 		return rst;
 	}
 	
@@ -56,7 +57,7 @@ public static String Treynor_ratio(String r_f, String R_p, String beta_p) {
 	BigDecimal bp = new BigDecimal(beta_p);
 	
 	String rst;
-	rst = (((Rp.subtract(rf)).divide(bp)).toString());
+	rst = (((Rp.subtract(rf)).divide(bp, 2, RoundingMode.HALF_UP)).toString());
 	return rst;
 }
 
@@ -67,7 +68,7 @@ public static String Information_ratio(String R_B, String R_p, String v_bp) {
 	BigDecimal v = new BigDecimal(v_bp);
 	
 	String rst;
-	rst = (((Rp.subtract(RB)).divide(v)).toString());
+	rst = (((Rp.subtract(RB)).divide(v, 2, RoundingMode.HALF_UP)).toString());
 	return rst;
 }
 
